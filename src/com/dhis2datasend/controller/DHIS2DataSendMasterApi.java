@@ -141,7 +141,7 @@ public class DHIS2DataSendMasterApi {
 			        String rhisHaValue=pair.getValue().toString();			       
 			        it.remove(); // avoids a ConcurrentModificationException
 
-					URL url = new URL("http://103.247.238.67:8080/dhismohfw/api/dataValues?de="+dhis2_element+"&pe="+period+"&ou="+orgUnit+"");
+					URL url = new URL("url?de="+dhis2_element+"&pe="+period+"&ou="+orgUnit+"");
 					
 					HttpURLConnection con = (HttpURLConnection) url.openConnection();
 					//add reuqest header
